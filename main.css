@@ -1,0 +1,170 @@
+:root {
+  --btn-background: #203f9f;
+  --btn-color: #ffffff;
+  --menu-background: #f1f1f1;
+}
+/* Navbar styles started */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 35px 5%;
+  justify-content: space-between;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+button {
+  font-family: "Inter";
+}
+button {
+  border: none;
+  outline: none;
+}
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+.logo-box p {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 9px;
+}
+.link_top_ages-box {
+  display: flex;
+  margin-right: 70px;
+}
+.link_top_ages-box ul li {
+  list-style: none;
+  padding: 0 20px;
+}
+.link_top_ages-box ul {
+  display: flex;
+  align-items: center;
+}
+.link_top_ages-box ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+}
+.nav_right-box {
+  display: flex;
+}
+.nav_right-box button {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 18px 33px;
+  background: var(--btn-background);
+  color: var(--btn-color);
+  border-radius: 200px;
+}
+.hamburger_menu {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 25px 5%;
+  }
+  .logo-box img {
+    width: 22px;
+    height: 22px;
+  }
+  .logo-box p {
+    font-size: 15px;
+  }
+  .link_top_ages-box {
+    display: flex;
+    margin-right: 30px;
+  }
+  .link_top_ages-box ul li {
+    list-style: none;
+    padding: 0 10px;
+  }
+  .link_top_ages-box ul {
+    display: flex;
+    align-items: center;
+  }
+  .link_top_ages-box ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .nav_right-box button {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 14px 20px;
+    background: var(--btn-background);
+    color: var(--btn-color);
+    border-radius: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav_right-box {
+    background: var(--menu-background);
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.3s linear;
+    padding: 20px 15px;
+    padding-top: 50px;
+    height: 100vh;
+    width: 300px;
+    transform: translateX(100%);
+    display: block;
+  }
+  .link_top_ages-box ul {
+    display: block;
+  }
+  .link_top_ages-box ul li {
+    margin: 20px 0;
+  }
+
+  .hamburger_menu {
+    cursor: pointer;
+    z-index: 3;
+    height: max-content;
+    display: block;
+  }
+  .hamburger_menu span {
+    transition: 0.3s linear transform;
+    display: block;
+    margin: 6px;
+    width: 50px;
+    border: 1px solid #000;
+  }
+  .active {
+    transform: translateX(0%);
+  }
+  .hamburger_active .first-arrow {
+    transform: rotate(45deg);
+    margin-bottom: -2px;
+  }
+  .hamburger_active .second-arrow {
+    transform: rotate(-45deg);
+  }
+  .hamburger_active span {
+    margin: 0;
+    display: flex;
+  }
+}
+@media screen and (max-width: 425px) {
+  .nav_right-box {
+    width: 100vw;
+  }
+}
+
+/* Navbar styles finished */
+
