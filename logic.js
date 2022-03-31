@@ -1,8 +1,22 @@
 let hamburgerMenu = document.querySelector(".hamburger_menu");
 let menu = document.querySelector(".nav_right-box");
+let open = false;
+let componentsLink = document.querySelectorAll(".for_close_menu");
+componentsLink.forEach((component) => {
+  component.addEventListener("click", () => {
+    open = !open;
+    document.body.style.overflow = open ? "hidden" : "inherit";
+    menu.classList.remove("active");
+    hamburgerMenu.classList.remove("hamburger_active");
+    console.log(open);
+  });
+});
 hamburgerMenu.addEventListener("click", () => {
+  open = !open;
+  document.body.style.overflow = open ? "hidden" : "inherit";
   menu.classList.toggle("active");
   hamburgerMenu.classList.toggle("hamburger_active");
+  console.log(open);
 });
 let brandsData = [
   { img: "./images/image 79.png" },
