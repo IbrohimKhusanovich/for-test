@@ -13,7 +13,7 @@
 nav {
   display: flex;
   position: sticky;
-  background:#fff;
+  background: #fff;
   top: 0;
   z-index: 5;
   align-items: center;
@@ -337,6 +337,7 @@ button {
   transform: rotate(180deg);
 }
 .about-us {
+  padding-top: 127px;
   border-top: 1px solid #000;
 }
 .about_us-box {
@@ -439,8 +440,8 @@ button {
 
 /* Get Service styles started  */
 .get_service {
-  margin-top: 200px;
   padding: 0 5%;
+  padding-top: 200px;
 }
 .get_service-box:first-child {
   border-top: 1px solid #000;
@@ -652,6 +653,7 @@ button {
 .about_us-video {
   padding: 0 5%;
   padding-bottom: 200px;
+  padding-top: 127px;
 }
 .video_box-about_us-video {
   width: 50%;
@@ -885,6 +887,8 @@ button {
 .news {
   padding: 0 5%;
   padding-bottom: 200px;
+
+  padding-top: 127px;
   display: grid;
   grid-template-areas:
     "text btn"
