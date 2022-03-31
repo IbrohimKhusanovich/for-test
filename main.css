@@ -336,8 +336,10 @@ button {
 .scroll-btn .prev-btn img {
   transform: rotate(180deg);
 }
-.about_us-box {
+.about-us {
   border-top: 1px solid #000;
+}
+.about_us-box {
   border-bottom: 1px solid #000;
   height: 700px;
 }
@@ -650,7 +652,6 @@ button {
 .about_us-video {
   padding: 0 5%;
   padding-bottom: 200px;
-  padding-top: 127px;
 }
 .video_box-about_us-video {
   width: 50%;
@@ -884,8 +885,6 @@ button {
 .news {
   padding: 0 5%;
   padding-bottom: 200px;
-
-  padding-top: 127px;
   display: grid;
   grid-template-areas:
     "text btn"
