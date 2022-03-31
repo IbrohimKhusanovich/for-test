@@ -338,9 +338,9 @@ button {
 }
 .about-us {
   padding-top: 127px;
-  border-top: 1px solid #000;
 }
 .about_us-box {
+  border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   height: 700px;
 }
